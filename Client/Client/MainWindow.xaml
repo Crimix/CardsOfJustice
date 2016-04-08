@@ -17,6 +17,7 @@
         <Label x:Name="label" Content="Welcome to Cards of Justice" HorizontalAlignment="Left" Margin="174,16,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="166"/>
         <Button x:Name="host" Grid.ColumnSpan="2" Content="Host game" HorizontalAlignment="Left" Margin="34,103,0,0" VerticalAlignment="Top" Width="75" Click="host_Click"/>
         <Button x:Name="Join" Grid.ColumnSpan="2" Content="Join game" HorizontalAlignment="Left" Margin="34,172,0,0" VerticalAlignment="Top" Width="75" Click="Join_Click"/>
+        <TextBox x:Name="textBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="34,220,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
