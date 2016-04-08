@@ -44,8 +44,8 @@ namespace Client
                 // This example uses port 11000 on the local computer.
                 IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
-                IPAddress ip = IPAddress.Parse(textBox.Text);
-                IPEndPoint remoteEP = new IPEndPoint(ip,11000);
+                //IPAddress ip = IPAddress.Parse(textBox.Text);
+                IPEndPoint remoteEP = new IPEndPoint(ipAddress,11000);
 
                 // Create a TCP/IP  socket.
                 Socket senderIP = new Socket(AddressFamily.InterNetwork,
