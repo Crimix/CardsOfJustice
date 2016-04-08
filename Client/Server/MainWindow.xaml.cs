@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Client
+namespace Server
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,16 +23,6 @@ namespace Client
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void host_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Join_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
