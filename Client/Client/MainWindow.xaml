@@ -12,7 +12,9 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Content="Welcome to Cards of Justice" HorizontalAlignment="Left" Margin="174,34,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="166"/>
+        <Image x:Name="image" Grid.ColumnSpan="2" Margin="137.87,34,0,0" Source="Images/COJ.png" RenderTransformOrigin="0.412,0.661" Height="243" VerticalAlignment="Top" HorizontalAlignment="Left" Width="243"/>
+
+        <Label x:Name="label" Content="Welcome to Cards of Justice" HorizontalAlignment="Left" Margin="174,16,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="166"/>
         <Button x:Name="host" Grid.ColumnSpan="2" Content="Host game" HorizontalAlignment="Left" Margin="34,103,0,0" VerticalAlignment="Top" Width="75" Click="host_Click"/>
         <Button x:Name="Join" Grid.ColumnSpan="2" Content="Join game" HorizontalAlignment="Left" Margin="34,172,0,0" VerticalAlignment="Top" Width="75" Click="Join_Click"/>
 
