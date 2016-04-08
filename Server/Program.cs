@@ -8,8 +8,10 @@ namespace Server
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
+            ServerListener.startListener();
+            return 0;
         }
     }
 }
