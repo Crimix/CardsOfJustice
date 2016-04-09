@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{66B39926-747E-4121-A839-C8D9210E8D96}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Client</RootNamespace>
     <AssemblyName>Client</AssemblyName>
@@ -104,6 +104,10 @@
     <Resource Include="Images\COJ.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Server\Server.csproj">
+      <Project>{cfc0d406-8c73-4fc1-a02e-1092f5134ea0}</Project>
+      <Name>Server</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{2d7e1758-8ee9-4608-8f54-ec3d4a3a4679}</Project>
       <Name>Common</Name>

@@ -16,6 +16,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using Server;
+using Common;
 using System.Diagnostics;
 
 namespace Client
@@ -28,10 +29,12 @@ namespace Client
         public MainWindow()
         {
             InitializeComponent();
+            ConsoleHandler.HideConsole();
         }
 
         private void host_Click(object sender, RoutedEventArgs e)
         {
+            ConsoleHandler.ShowConsole();
             Thread thread = new Thread(ServerListener.startListener);
             thread.Start();
         }
