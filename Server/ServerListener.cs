@@ -14,7 +14,6 @@ namespace Server
 
         public static void startListener()
         {
-            GetConsoleWindow();
             byte[] bytes = new byte[1024];
 
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
