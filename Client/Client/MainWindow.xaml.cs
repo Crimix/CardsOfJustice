@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
+using Server;
+using System.Diagnostics;
 
 namespace Client
 {
@@ -29,7 +32,8 @@ namespace Client
 
         private void host_Click(object sender, RoutedEventArgs e)
         {
-
+            Thread thread = new Thread(ServerListener.startListener);
+            thread.Start();
         }
 
         private void Join_Click(object sender, RoutedEventArgs e)

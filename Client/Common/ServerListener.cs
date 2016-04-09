@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Runtime.InteropServices;
 using System.Text;
 
 
 namespace Server
 {
-    class ServerListener
+    public class ServerListener
     {
+
         public static string data = null;
 
         public static void startListener()
         {
+            GetConsoleWindow();
             byte[] bytes = new byte[1024];
 
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
