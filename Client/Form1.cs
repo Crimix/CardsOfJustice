@@ -1,46 +1,36 @@
-﻿using System;
+﻿using Common;
+using Server;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using System.Threading;
-using Server;
-using Common;
-using System.Diagnostics;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Client
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class Form1 : Form
     {
-
-        public MainWindow()
+        public Form1()
         {
             InitializeComponent();
             ConsoleHandler.HideConsole();
         }
 
-        private void host_Click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             ConsoleHandler.ShowConsole();
             Thread thread = new Thread(ServerListener.startListener);
             thread.Start();
         }
 
-        private void Join_Click(object sender, RoutedEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             // Data buffer for incoming data.
             byte[] bytes = new byte[1024];
@@ -105,11 +95,6 @@ namespace Client
             {
                 Console.WriteLine(es.ToString());
             }
-            Game game = new Game();
-            game.Show();
-            this.Close();
-
         }
-
     }
 }

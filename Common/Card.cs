@@ -1,8 +1,9 @@
 ﻿
-namespace Client
+namespace Common
 {
     public class Card
     {
+
         public enum value
         {
             Ace = 1,
@@ -41,11 +42,12 @@ namespace Client
             c = (color)int.Parse(var[1]);
         }
 
-        public value Value() => v;
-        public color Color() => c;
-        public string ValueString() => v.ToString();
-        public string ColorString() => c.ToString();
-
+        public value Value => v;
+        public color Color => c;
+        public string ValueString => v.ToString();
+        public string ColorString => c.ToString();
+        public static int Height => 112;
+        public static int Width => 78;
 
     }
 }
