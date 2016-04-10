@@ -95,6 +95,10 @@ namespace Client
             {
                 Console.WriteLine(es.ToString());
             }
+            this.Hide();
+            Game game = new Game();
+            game.FormClosed += (s, args) => Close();
+            game.Show();
         }
     }
 }
