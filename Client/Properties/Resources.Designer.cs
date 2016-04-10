@@ -273,19 +273,9 @@ namespace Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Joker_of_b {
+        internal static System.Drawing.Bitmap Joker_of_ {
             get {
-                object obj = ResourceManager.GetObject("Joker_of_b", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Joker_of_r {
-            get {
-                object obj = ResourceManager.GetObject("Joker_of_r", resourceCulture);
+                object obj = ResourceManager.GetObject("Joker_of_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +323,9 @@ namespace Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Multi {
+        internal static System.Drawing.Bitmap Multi_of_ {
             get {
-                object obj = ResourceManager.GetObject("Multi", resourceCulture);
+                object obj = ResourceManager.GetObject("Multi_of_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
