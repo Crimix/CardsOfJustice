@@ -119,6 +119,64 @@
       <Name>Server</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Ace_of_clubs.png" />
+    <Resource Include="Images\Ace_of_diamonds.png" />
+    <Resource Include="Images\Ace_of_hearts.png" />
+    <Resource Include="Images\Ace_of_spades.png" />
+    <Resource Include="Images\Eight_of_clubs.png" />
+    <Resource Include="Images\Eight_of_diamonds.png" />
+    <Resource Include="Images\Eight_of_hearts.png" />
+    <Resource Include="Images\Eight_of_spades.png" />
+    <Resource Include="Images\Five_of_clubs.png" />
+    <Resource Include="Images\Five_of_diamonds.png" />
+    <Resource Include="Images\Five_of_hearts.png" />
+    <Resource Include="Images\Five_of_spades.png" />
+    <Resource Include="Images\Four_of_clubs.png" />
+    <Resource Include="Images\Four_of_diamonds.png" />
+    <Resource Include="Images\Four_of_hearts.png" />
+    <Resource Include="Images\Four_of_spades.png" />
+    <Resource Include="Images\Jack_of_clubs.png" />
+    <Resource Include="Images\Jack_of_diamonds.png" />
+    <Resource Include="Images\Jack_of_hearts.png" />
+    <Resource Include="Images\Jack_of_spades.png" />
+    <Resource Include="Images\Joker_of_b.png" />
+    <Resource Include="Images\Joker_of_r.png" />
+    <Resource Include="Images\King_of_clubs.png" />
+    <Resource Include="Images\King_of_diamonds.png" />
+    <Resource Include="Images\King_of_hearts.png" />
+    <Resource Include="Images\King_of_spades.png" />
+    <Resource Include="Images\Multi.png" />
+    <Resource Include="Images\Multi_overlay.png" />
+    <Resource Include="Images\Nine_of_clubs.png" />
+    <Resource Include="Images\Nine_of_diamonds.png" />
+    <Resource Include="Images\Nine_of_hearts.png" />
+    <Resource Include="Images\Nine_of_spades.png" />
+    <Resource Include="Images\Queen_of_clubs.png" />
+    <Resource Include="Images\Queen_of_diamonds.png" />
+    <Resource Include="Images\Queen_of_hearts.png" />
+    <Resource Include="Images\Queen_of_spades.png" />
+    <Resource Include="Images\Seven_of_clubs.png" />
+    <Resource Include="Images\Seven_of_diamonds.png" />
+    <Resource Include="Images\Seven_of_hearts.png" />
+    <Resource Include="Images\Seven_of_spades.png" />
+    <Resource Include="Images\Six_of_clubs.png" />
+    <Resource Include="Images\Six_of_diamonds.png" />
+    <Resource Include="Images\Six_of_hearts.png" />
+    <Resource Include="Images\Six_of_spades.png" />
+    <Resource Include="Images\Ten_of_clubs.png" />
+    <Resource Include="Images\Ten_of_diamonds.png" />
+    <Resource Include="Images\Ten_of_hearts.png" />
+    <Resource Include="Images\Ten_of_spades.png" />
+    <Resource Include="Images\Three_of_clubs.png" />
+    <Resource Include="Images\Three_of_diamonds.png" />
+    <Resource Include="Images\Three_of_hearts.png" />
+    <Resource Include="Images\Three_of_spades.png" />
+    <Resource Include="Images\Two_of_clubs.png" />
+    <Resource Include="Images\Two_of_diamonds.png" />
+    <Resource Include="Images\Two_of_hearts.png" />
+    <Resource Include="Images\Two_of_spades.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
