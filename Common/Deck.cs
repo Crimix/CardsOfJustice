@@ -28,9 +28,14 @@ namespace Common
 
         public void Shuffle()
         {
-
+            for (int n = deck.Count - 1; n > 0; --n)
+            {
+                int k = rng.Next(n + 1);
+                Card temp = deck[n];
+                deck[n] = deck[k];
+                deck[k] = temp;
+            }
         }
-
 
     }
 }
