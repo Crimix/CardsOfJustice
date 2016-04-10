@@ -9,6 +9,7 @@ namespace Common
 
     public class Deck
     {
+        private static Random rng = new Random();
         private List<Card> deck = new List<Card>();
         public Deck()
         {
@@ -24,6 +25,12 @@ namespace Common
         {
             deck.Remove(card);
         }
+
+        public void Shuffle()
+        {
+
+        }
+
 
     }
 }
