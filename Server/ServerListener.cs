@@ -18,6 +18,7 @@ namespace Server
             
             IPAddress ipAddress = ipHostInfo.AddressList[0];
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
+            
 
             Console.WriteLine(ipAddress);
             
