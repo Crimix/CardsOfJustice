@@ -25,7 +25,6 @@ namespace Client
             p.Image = (Bitmap)rm.GetObject("Ace_of_clubs");
             p.Location = new Point(120, 120);
             this.Controls.Add(p);
-
         }
     }
 }

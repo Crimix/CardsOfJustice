@@ -37,5 +37,27 @@ namespace Common
             }
         }
 
+        public void MakeServerDeck()
+        {
+            for (int i = 3; i < 16; i++)
+            {
+                for (int j = 1; j < 5; j++)
+                {
+                    AddCard(new Card($"{i}:{j}"));
+                }
+            }
+            AddCard(new Card("16:"));
+            AddCard(new Card("16:"));
+            AddCard(new Card("16:"));
+            AddCard(new Card("16:"));
+            AddCard(new Card("17:"));
+            Shuffle();
+            foreach (Card item in deck)
+            {
+                Console.WriteLine($"{item.ValueString} of {item.ColorString}");
+            }
+            
+        }
+
     }
 }
