@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Runtime.InteropServices;
 using System.Text;
+using Common;
 
 
 namespace Server
 {
-    class ServerListener
+    public class ServerListener
     {
+
         public static string data = null;
 
         public static void startListener()
         {
+            Deck deck = new Deck();
+            deck.MakeServerDeck();
             byte[] bytes = new byte[1024];
 
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
