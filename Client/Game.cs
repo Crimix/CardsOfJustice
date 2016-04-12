@@ -19,12 +19,10 @@ namespace Client
         public Game()
         {
             InitializeComponent();
-            PictureBox p = new PictureBox();
-            p.SizeMode = PictureBoxSizeMode.StretchImage;
-            p.Size = new Size(Card.Width, Card.Height);
-            p.Image = (Bitmap)rm.GetObject("Ace_of_clubs");
-            p.Location = new Point(120, 120);
-            this.Controls.Add(p);
+            Player p = new Player("DonF");
+            p.ReciveCard("3:2");
+            p.ReciveCard("4:2");
+            p.Deck.DisplayDeck(flowLayoutPanel1);
         }
     }
 }

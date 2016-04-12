@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    class Player
+    interface CommandListener
     {
     }
 }

@@ -26,6 +26,8 @@ namespace Common
             deck.Remove(card);
         }
 
+        public List<Card> GetDeck => deck;
+
         public void Shuffle()
         {
             for (int n = deck.Count - 1; n > 0; --n)
