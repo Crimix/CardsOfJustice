@@ -159,7 +159,7 @@
     <Resource Include="Images\Jack_of_spades.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Joker_of_.png" />
+    <Resource Include="Images\Joker_of_0.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\King_of_clubs.png" />
@@ -174,7 +174,7 @@
     <Resource Include="Images\King_of_spades.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Multi_of_.png" />
+    <Resource Include="Images\Multi_of_0.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Multi_overlay.png" />

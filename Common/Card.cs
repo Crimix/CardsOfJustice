@@ -29,7 +29,7 @@ namespace Common
         {
             hearts = 1,
             spades = 2,
-            diamond = 3,
+            diamonds = 3,
             clubs = 4,
         }
 

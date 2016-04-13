@@ -19,9 +19,20 @@ namespace Client
         {
             foreach (ClientCard item in GetDeck)
             {
-                flp.Controls.Add(item.Pic);
+                PictureBox pic = item.Pic;
+                pic.MouseClick += Pic_MouseClick;
+                flp.Controls.Add(pic);
             }
             
+        }
+
+        private void Pic_MouseClick(object sender, MouseEventArgs e)
+        {
+            ConsoleHandler.ShowConsole();
+            if (sender is PictureBox)
+            {
+                Console.WriteLine(((PictureBox)sender).Name);
+            }
         }
     }
 }

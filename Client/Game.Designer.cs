@@ -33,10 +33,11 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.ForestGreen;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 659);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(157, 659);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1390, 112);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1240, 120);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // Game
@@ -46,7 +47,7 @@
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(1633, 794);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game";
             this.Text = "Game";
             this.ResumeLayout(false);

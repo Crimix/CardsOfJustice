@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -32,6 +33,7 @@ namespace Client
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //ConsoleHandler.ShowConsole();
             //// Data buffer for incoming data.
             //byte[] bytes = new byte[1024];
 
@@ -41,13 +43,17 @@ namespace Client
             //    // Establish the remote endpoint for the socket.
             //    // This example uses port 11000 on the local computer.
             //    IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
+            //    foreach (var item in ipHostInfo.AddressList)
+            //    {
+            //        Console.WriteLine(item);
+            //    }
             //    IPAddress ipAddress = ipHostInfo.AddressList[0];
             //    IPAddress ip;
-            //    if (!IPAddress.TryParse(textBox1.Text,out ip))
+            //    if (!IPAddress.TryParse(textBox1.Text, out ip))
             //    {
             //        return;
             //    }
-            //    IPEndPoint remoteEP = new IPEndPoint(ip, 3075);
+            //    IPEndPoint remoteEP = new IPEndPoint(ip, 11000);
 
             //    // Create a TCP/IP  socket.
             //    Socket senderIP = new Socket(AddressFamily.InterNetwork,
@@ -98,10 +104,29 @@ namespace Client
             //{
             //    Console.WriteLine(es.ToString());
             //}
+            ConsoleHandler.ShowConsole();
             this.Hide();
             Game game = new Game();
             game.FormClosed += (s, args) => Close();
             game.Show();
+        }
+
+        public string GetPublicIP()
+        {
+            String direction = "";
+            WebRequest request = WebRequest.Create("http://checkip.dyndns.org/");
+            using (WebResponse response = request.GetResponse())
+            using (StreamReader stream = new StreamReader(response.GetResponseStream()))
+            {
+                direction = stream.ReadToEnd();
+            }
+
+            //Search for the ip in the html
+            int first = direction.IndexOf("Address: ") + 9;
+            int last = direction.LastIndexOf("</body>");
+            direction = direction.Substring(first, last - first);
+
+            return direction;
         }
     }
 }

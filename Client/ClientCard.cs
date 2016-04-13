@@ -21,7 +21,8 @@ namespace Client
             p.SizeMode = PictureBoxSizeMode.StretchImage;
             p.Size = new Size(Card.Width, Card.Height);
             p.Image = (Bitmap)rm.GetObject($"{Value}_of_{Color}");
-            p.Location = new Point(120, 120);
+            p.Name = $"{Value}_of_{Color}";
+            //p.Location = new Point(120, 120);
         }
 
         public PictureBox Pic => p;

@@ -60,6 +60,10 @@ namespace Common
             }
             
         }
+        public void sort()
+        {
+            deck.Sort();
+        }
 
     }
 }
