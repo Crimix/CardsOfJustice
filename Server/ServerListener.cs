@@ -4,7 +4,7 @@ using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Text;
 using Common;
-
+using System.Net.NetworkInformation;
 
 namespace Server
 {
@@ -20,8 +20,17 @@ namespace Server
             byte[] bytes = new byte[1024];
 
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
+
+            ConsoleHandler.ShowConsole();
+            IPAddress ipAddress = null;
+            foreach (IPAddress item in ipHostInfo.AddressList)
+            {
+                if (!item.Address.ToString().EndsWith("1"))
+                {
+                    ipAddress = item;
+                }
+            }
             
-            IPAddress ipAddress = ipHostInfo.AddressList[0];
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
             
 

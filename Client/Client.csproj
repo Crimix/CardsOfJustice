@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ClientCard.cs" />
     <Compile Include="ClientDeck.cs" />
+    <Compile Include="ConnectionHandler.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
