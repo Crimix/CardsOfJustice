@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    interface CommandListener
+    public class Command
     {
     }
 }

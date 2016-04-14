@@ -49,8 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientCard.cs" />
-    <Compile Include="ClientDeck.cs" />
+    <Compile Include="GUI\ClientCard.cs" />
+    <Compile Include="GUI\ClientDeck.cs" />
     <Compile Include="ConnectionHandler.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>

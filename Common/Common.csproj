@@ -42,8 +42,8 @@
   <ItemGroup>
     <Compile Include="Broad.cs" />
     <Compile Include="Card.cs" />
-    <Compile Include="CommandListener.cs" />
-    <Compile Include="CommandSender.cs" />
+    <Compile Include="CommandHandler.cs" />
+    <Compile Include="Command.cs" />
     <Compile Include="ConsoleHandler.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="IIPEncoder.cs" />

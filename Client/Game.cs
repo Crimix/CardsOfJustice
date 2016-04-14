@@ -16,8 +16,10 @@ namespace Client
     public partial class Game : Form
     {
         ResourceManager rm = Resources.ResourceManager;
-        public Game()
+        ConnectionHandler con;
+        public Game(ConnectionHandler con)
         {
+            this.con = con;
             InitializeComponent();
             Player p = new Player("DonF");
             p.ReciveCard("3:2");

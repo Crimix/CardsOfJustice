@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    class IIPEncoder
+    public interface IIPEncoder
     {
+        string Encode(string ip);
+        string Decode(string input);
     }
 }
