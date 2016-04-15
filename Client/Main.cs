@@ -34,7 +34,7 @@ namespace Client
         private void button2_Click(object sender, EventArgs e)
         {
             ConnectionHandler con = new ConnectionHandler();
-            con.connect(textBox1.Text.ToString());
+            con.Connect(textBox1.Text.ToString());
             this.Hide();
             Game game = new Game(con);
             game.FormClosed += (s, args) => Close();

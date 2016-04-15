@@ -70,6 +70,8 @@ namespace Common
             }
         }
 
+        public string Name => $"{ValueString}_of_{ColorString}";
+
         public int CompareTo(object obj)
         {
             if (obj == null) return 1;

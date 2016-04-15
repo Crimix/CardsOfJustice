@@ -17,11 +17,12 @@ namespace Client
     {
         ResourceManager rm = Resources.ResourceManager;
         ConnectionHandler con;
+        Player p;
         public Game(ConnectionHandler con)
         {
             this.con = con;
+            p = con.ThePlayer;
             InitializeComponent();
-            Player p = new Player("DonF");
             p.ReciveCard("3:2");
             p.ReciveCard("4:2");
             p.ReciveCard("4:2");

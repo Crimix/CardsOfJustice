@@ -11,12 +11,15 @@ namespace Client
 {
     public class ConnectionHandler
     {
+        Player me = new Player("DonF");
         public ConnectionHandler()
         {
 
         }
 
-        public void connect(string ipString)
+        public Player ThePlayer => me;
+
+        public void Connect(string ipString)
         {
             ConsoleHandler.ShowConsole();
             // Data buffer for incoming data.

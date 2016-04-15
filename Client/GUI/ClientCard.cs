@@ -25,6 +25,33 @@ namespace Client
             //p.Location = new Point(120, 120);
         }
 
+        private void ChangeImage()
+        {
+            using (Graphics grfx = Graphics.FromImage(p.Image))
+            {
+                grfx.DrawImage(Resources.gray, 0, 0);
+            }
+
+        }
+        public void IsMulti()
+        {
+            using (Graphics grfx = Graphics.FromImage(p.Image))
+            {
+                grfx.DrawImage(Resources.Multi_overlay, 0, 0);
+            }
+        }
+
+        public bool Enabled {
+            get{
+                return p.Enabled;
+            }
+            set{
+                p.Enabled = value;
+                ChangeImage();
+            }
+        }
+
+
         public PictureBox Pic => p;
     }
 }

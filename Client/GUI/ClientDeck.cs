@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Common;
 using System.Windows.Forms;
+using Client.Properties;
 
 namespace Client
 {
     public class ClientDeck : Deck
     {
+        private List<Card> cardsToPlay = new List<Card>();
         public ClientDeck() : base()
         {
 
@@ -19,6 +21,7 @@ namespace Client
         {
             foreach (ClientCard item in GetDeck)
             {
+                item.Enabled = false;
                 PictureBox pic = item.Pic;
                 pic.MouseClick += Pic_MouseClick;
                 flp.Controls.Add(pic);
@@ -31,7 +34,8 @@ namespace Client
             ConsoleHandler.ShowConsole();
             if (sender is PictureBox)
             {
-                Console.WriteLine(((PictureBox)sender).Name);
+                Card c = GetDeck.Find(x => x.Name.Equals(((PictureBox)sender).Name));
+                Console.WriteLine(c.Name);
             }
         }
     }
