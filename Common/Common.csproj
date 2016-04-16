@@ -47,7 +47,6 @@
     <Compile Include="ConsoleHandler.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="IIPEncoder.cs" />
-    <Compile Include="IPEncoder.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rules.cs" />
